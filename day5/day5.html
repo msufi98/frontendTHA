@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin:auto;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            textarea{
+                resize:none;
+            }
+            div{
+                margin:auto
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Simple Calculator</h1>
+        Enter the first number: <textarea id="num1" row ="1"></textarea><br><br>
+        Enter the second number: <textarea id="num2" row= "1"></textarea>
+        <div>
+        <br>
+            <input type="button" name = "plus" id="plus" value = "+">
+        <input type="button" name = "minus" id="minus" value = "-">
+        <input type="button" name = "mul" id="mul" value = "*">
+        <input type="button" name = "div" id="div" value = "/">
+        </div>
+        <br>
+        <div id = "result"></div>        
+        
+        
+        <script src = "./script.js"></script>
+    </body>
+</html>
