@@ -1,0 +1,54 @@
+/* delete the following line if no text is used
+// edit the line if you wanna use other fonts*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+*{
+	box-sizing:border-box;
+}
+/* use only the available space inside the 400x400 frame*/
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+	
+  position: absolute;
+  top: 0%;
+  left: 0%;
+	width:100%;
+	display:grid;
+	grid-template: repeat(20,19px) / repeat(20,19px);
+    gap: 1px;
+}
+.box{
+    border: white solid 1px;
+    all:unset;
+	background-color:white;
+	grid-area: 1 /1 /1/1;
+    opacity: .8;
+}
+
+.box:checked{
+    background-color:red;
+	grid-area: 1 /1 /1/1;
+    opacity: .8;
+}
+
+
+.box:hover{
+    opacity: 0.6;
+}
