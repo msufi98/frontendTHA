@@ -1,0 +1,72 @@
+<html>
+<head>
+	<style>
+		*{
+			box-sizing:border-box;
+			margin: 0px;
+			font-family: arial;
+		}
+		body{
+			background-color: orange;
+			display:flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-content: flex-start;
+
+		}
+		h1{
+			align-self:flex-start;
+			margin: 50px;
+			flex-basis: 100%;
+			text-align:center;			
+		}
+		
+		#labels{
+			align-items:flex-start;
+			flex-basis: 100%;
+			display:flex;
+			justify-content: space-evenly;
+			margin-left: 200px;
+			margin-right: 200px;
+			margin-bottom: 50px;
+		}
+		#seats{
+		
+			flex-basis: 100%;
+			margin-left: 75px;
+			margin-right: 75px;
+			display:grid;
+			grid-template: repeat(8, 1fr) / repeat(6,1fr);
+			gap: 5px;
+		}
+		#seat{
+		height: 60px;
+			grid-area: 1 /1/2/2;
+			border-radius: 20px
+		}
+		.taken{
+				background-color:red;
+
+		}
+		.untaken{
+				background-color:yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		Seat booking System
+	</h1>
+	<div id="labels">
+		<div id = "booked">Number of seats booked:<div id="bookedNumber"></div>
+		</div>
+		<div id= "unbooked">Number of seats left:<div id= "unbookedNumber"></div>
+		</div>
+	</div>
+	<div id="seats">
+		<div id ="seat"></div>
+	</div>
+<script src="./script.js">
+</script>
+</body>
+</html>
