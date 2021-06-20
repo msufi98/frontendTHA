@@ -31,7 +31,8 @@
 			margin-bottom: 50px;
 		}
 		#seats{
-		
+			border: solid brown 5px;
+			background-color:brown;
 			flex-basis: 100%;
 			margin-left: 75px;
 			margin-right: 75px;
@@ -51,16 +52,24 @@
 		.untaken{
 				background-color:yellow;
 		}
+		#screen{
+		align-self:flex-start;
+			height: 20px;
+			width: 500px;
+			background-color: brown;
+			border-radius: 50px 50px 0px 0px;
+		}
 	</style>
 </head>
 <body>
+	<div id="screen"></div>
 	<h1>
-		Seat booking System
+		Screen
 	</h1>
 	<div id="labels">
-		<div id = "booked">Number of seats booked:<div id="bookedNumber"></div>
+		<div id = "booked">Number of seats left:<div id="bookedNumber"></div>
 		</div>
-		<div id= "unbooked">Number of seats left:<div id= "unbookedNumber"></div>
+		<div id= "unbooked">Number of seats booked:<div id= "unbookedNumber"></div>
 		</div>
 	</div>
 	<div id="seats">
