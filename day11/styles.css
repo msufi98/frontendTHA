@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+#buttons{
+    justify-content: flex-start;
+}
+
+.individualQuestion{
+    margin: 50px;
+}
+.individualAnswer{
+    margin: 5px;
+}
+
+.choices{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+
+.correct-selected{
+    background-color: greenyellow;
+}
+
+.incorrect-selected{
+    background-color: red;
+}
