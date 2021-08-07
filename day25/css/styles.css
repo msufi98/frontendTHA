@@ -1,0 +1,46 @@
+#spanning-banner{
+    background-color: #ffa500;
+    color:white;
+    padding-top: 1em;
+    padding-bottom:1em;
+    margin-bottom: 2em;
+}
+
+#spanning-content {
+    margin-bottom: 2em
+}
+
+#side-content {
+    width:fit-content;
+    height:auto;
+}
+
+.icons svg path{
+    color: white;
+    text-decoration: white;
+}
+
+.links a, .links a:hover, .links a :focus {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (min-width: 576px) {
+    
+ }
+
+@media (min-width: 768px) { 
+    
+ }
+
+@media (min-width: 992px) { 
+    
+ }
+
+@media (min-width: 1200px) { 
+    
+ }
+
+@media (min-width: 1400px) { 
+     }
